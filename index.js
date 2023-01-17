@@ -11,8 +11,11 @@ import commentsRouter from './routes/comments.js'
 import likesRouter from './routes/likes.js'
 import relationshipsRouter from './routes/relationships.js'
 
+import * as dotenv from 'dotenv'
+dotenv.config()
+
 const app = express()
-const port = 8080
+const PORT = process.env.PORT
 
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Credentials', true)
@@ -51,6 +54,6 @@ app.use('/api/comments', commentsRouter)
 app.use('/api/likes', likesRouter)
 app.use('/api/relationships', relationshipsRouter)
 
-app.listen(port, (req, res) => {
-    console.log(`Localhost is running in port: ${port} `)
+app.listen(PORT || 8080, (req, res) => {
+    console.log(`Localhost is running in port: ${PORT} `)
 })
