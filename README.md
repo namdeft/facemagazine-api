@@ -9,6 +9,9 @@
 * Create APIs for front-end
 * Save data to mysql database
 
+## ⭐ Upcoming Features 
+* Realtime chat app (Socket.io)
+
 ## 🤖 Tech stacks
 ### Back-end
 <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" > <img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB" > <img src="https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens" > <img src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white" >
